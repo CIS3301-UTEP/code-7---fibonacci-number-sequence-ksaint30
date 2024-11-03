@@ -13,7 +13,8 @@ def get_fibonacci_number_sequence(number):
     if number == 1:
         return [1,1]
     list = get_fibonacci_number_sequence(number-1)
-    list.append(list[-1] + list[-2])
+    if len(list) < number + 1:
+       list.append(list[-1] + list[-2])
     return list
 
 if __name__ == "__main__":
