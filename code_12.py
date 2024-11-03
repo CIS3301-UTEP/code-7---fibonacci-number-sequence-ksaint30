@@ -13,11 +13,9 @@ def get_fibonacci_number_sequence(number):
     if number == 1:
         return [1,1]
     list = get_fibonacci_number_sequence(number-1)
-    if len(list) < number:
-        return list
     list.append(list[-1] + list[-2])
-    return list
+    return list 
 
 if __name__ == "__main__":
-    print(get_fibonacci_number(4))
-    print(get_fibonacci_number_sequence(4))
+    print(get_fibonacci_number(7))
+    print(get_fibonacci_number_sequence(7))
