@@ -17,5 +17,6 @@ def get_fibonacci_number_sequence(number):
     return list 
 
 if __name__ == "__main__":
-    print(get_fibonacci_number(7))
-    print(get_fibonacci_number_sequence(7))
+    number = 5
+    print(get_fibonacci_number(number))
+    print(get_fibonacci_number_sequence(number))
