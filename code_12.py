@@ -9,9 +9,9 @@ def get_fibonacci_number(position):
 
 def get_fibonacci_number_sequence(number):
     if number == 0:
-        return [0]
+        return [1]
     if number == 1:
-        return [0,1]
+        return [1,1]
     list = get_fibonacci_number_sequence(number-1)
     list.append(list[-1] + list[-2])
     return list
